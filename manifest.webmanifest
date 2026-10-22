@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "Wird — Mon Coran",
+  "short_name": "Wird",
+  "description": "Lecture du Mushaf, suivi de mémorisation et tirage de pages pour les prières.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f8f5",
+  "theme_color": "#315c4b",
+  "icons": [
+    { "src": "./assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

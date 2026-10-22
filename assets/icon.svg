@@ -1,11 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#174c3b"/><stop offset="1" stop-color="#082f27"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#fff0b3"/><stop offset="1" stop-color="#c79a3b"/></linearGradient></defs>
-<rect width="512" height="512" rx="112" fill="url(#bg)"/>
-<path d="M256 48 285 91 335 86 350 134 397 153 390 202 425 237 399 278 411 325 366 350 350 397 301 392 256 426 211 392 162 397 146 350 101 325 113 278 87 237 122 202 115 153 162 134 177 86 227 91Z" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linejoin="round"/>
-<path d="M256 115 269 139 296 142 277 161 282 188 256 175 230 188 235 161 216 142 243 139Z" fill="url(#gold)"/>
-<path d="M126 257 Q185 228 250 267 L250 344 Q187 306 126 328Z" fill="#fff8e7" stroke="url(#gold)" stroke-width="7" stroke-linejoin="round"/>
-<path d="M386 257 Q327 228 262 267 L262 344 Q325 306 386 328Z" fill="#f4e6c5" stroke="url(#gold)" stroke-width="7" stroke-linejoin="round"/>
-<path d="M256 267V344 M145 273Q197 259 237 286 M145 291Q197 277 237 304 M145 309Q197 295 237 322 M367 273Q315 259 275 286 M367 291Q315 277 275 304 M367 309Q315 295 275 322" fill="none" stroke="#c5a45d" stroke-width="4" stroke-linecap="round"/>
-<path d="M128 351 256 386 384 351" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="256" y="453" text-anchor="middle" font-family="Georgia,serif" font-size="54" fill="#fff0c4">Wird</text>
+<defs>
+  <linearGradient id="sage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfe9d9"/><stop offset="1" stop-color="#b9cdb8"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#f6e7a9"/><stop offset="1" stop-color="#c5a45f"/></linearGradient>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#sage)"/>
+<circle cx="256" cy="248" r="184" fill="#f7f3e7" opacity=".58"/>
+<path d="M256 76 C226 118 181 122 151 151 C115 187 116 236 139 270 C165 309 207 326 256 368 C305 326 347 309 373 270 C396 236 397 187 361 151 C331 122 286 118 256 76Z" fill="none" stroke="url(#gold)" stroke-width="8"/>
+<path d="M256 119 C226 157 193 164 173 188 C148 218 160 255 185 278 C205 296 231 310 256 330 C281 310 307 296 327 278 C352 255 364 218 339 188 C319 164 286 157 256 119Z" fill="#e8eddf" stroke="#a8bca5" stroke-width="3"/>
+<path d="M143 238 Q195 211 250 248 L250 337 Q195 302 143 326Z" fill="#fffdf5" stroke="#c5a45f" stroke-width="6" stroke-linejoin="round"/>
+<path d="M369 238 Q317 211 262 248 L262 337 Q317 302 369 326Z" fill="#f6efdc" stroke="#c5a45f" stroke-width="6" stroke-linejoin="round"/>
+<path d="M256 248V337 M158 253Q202 245 238 265 M158 274Q202 266 238 286 M158 295Q202 287 238 307 M354 253Q310 245 274 265 M354 274Q310 266 274 286 M354 295Q310 287 274 307" fill="none" stroke="#b9a16a" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M146 347 Q201 370 256 385 Q311 370 366 347" fill="none" stroke="#c5a45f" stroke-width="6" stroke-linecap="round"/>
+<path d="M256 88 266 106 286 109 271 123 275 143 256 133 237 143 241 123 226 109 246 106Z" fill="#e2c779"/>
+<text x="256" y="439" text-anchor="middle" font-family="Georgia,serif" font-size="49" letter-spacing="2" fill="#647d69">Wird</text>
 </svg>

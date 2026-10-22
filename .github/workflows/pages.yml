@@ -25,6 +25,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Download Madinah Mushaf page images
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/mushaf
+          seq -w 1 604 | xargs -P 8 -I{} sh -c 'curl --fail --location --retry 3 --retry-delay 1 --silent --show-error "https://raw.githubusercontent.com/quran-ws/quran-svg/main/mushafs/hafs/kfqc/svg/{}.svg" -o "assets/mushaf/{}.svg"' _ {}
+          test "$(find assets/mushaf -maxdepth 1 -name '*.svg' | wc -l)" -eq 604
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:

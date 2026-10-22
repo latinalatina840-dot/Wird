@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - ".github/workflows/android-apk.yml"
+      - "assets/icon.svg"
 
 permissions:
   contents: read
@@ -31,7 +32,19 @@ jobs:
         run: |
           npm init -y
           npm install @capacitor/core @capacitor/android
-          npm install --save-dev @capacitor/cli
+          npm install --save-dev @capacitor/cli @capacitor/assets
+          python -m pip install cairosvg
+          mkdir -p assets
+          python - <<'PY'
+          import cairosvg
+          cairosvg.svg2png(
+              url="assets/icon.svg",
+              write_to="assets/icon.png",
+              output_width=1024,
+              output_height=1024,
+          )
+          PY
+          npx capacitor-assets generate --android --assetPath assets
           cat > capacitor.config.json <<'EOF'
           {
             "appId": "com.wird.quran",
